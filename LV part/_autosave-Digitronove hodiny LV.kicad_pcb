@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-(kicad_pcb (version 20241229) (generator "pcbnew") (generator_version "9.0")
-)
-=======
 (kicad_pcb
 	(version 20241229)
 	(generator "pcbnew")
@@ -83,16 +79,15 @@
 	)
 	(net 0 "")
 	(gr_rect
-		(start 97 49.5)
-		(end 217 124)
+		(start 135.5 76.5)
+		(end 153.8 86.7)
 		(stroke
-			(width 0.2)
-			(type default)
+			(width 0.05)
+			(type solid)
 		)
 		(fill no)
-		(layer "F.Cu")
-		(uuid "90abe190-52b5-42f3-91c2-40f997247a22")
+		(layer "Edge.Cuts")
+		(uuid "21e64001-be92-4d33-9871-d0a3e7b92a66")
 	)
 	(embedded_fonts no)
 )
->>>>>>> 8e4e73fc6a3e8e095e6fc05fa4e5af656d393704
