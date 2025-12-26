@@ -1,4 +1,4 @@
-26442524305416407
+26446058108185073
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -69153,6 +69153,13 @@ LOGIC-74HC595N_DIP16_
 16
 16
 LOGIC-74HC595N_DIP16_
+MAX1771
+
+
+0
+0
+0
+LOGIC-74HC595N_DIP16_
 MODULE_ESP32_DEVKIT_V1
 
 
@@ -69175,6 +69182,13 @@ Untitled
 5
 LOGIC-74HC595N_DIP16_
 Untitled_1
+
+
+0
+0
+0
+LOGIC-74HC595N_DIP16_
+Untitled_2
 
 
 0
