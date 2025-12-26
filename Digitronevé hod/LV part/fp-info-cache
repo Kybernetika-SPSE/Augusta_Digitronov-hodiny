@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-26437224725936230
-=======
-26437224710024638
->>>>>>> 8e4e73fc6a3e8e095e6fc05fa4e5af656d393704
+26442524305416407
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -69150,33 +69146,40 @@ Yellow 5381 Series LED
 2
 2
 LOGIC-74HC595N_DIP16_
-<<<<<<< HEAD
 74HC595N
 <b>Dual In Line Package</b>
 
 0
 16
 16
-=======
-DIP16-2.54-20.32X5.84MM
-<b>Dual In Line Package</b>
+LOGIC-74HC595N_DIP16_
+MODULE_ESP32_DEVKIT_V1
+
 
 0
-3
-3
->>>>>>> 8e4e73fc6a3e8e095e6fc05fa4e5af656d393704
+30
+30
+LOGIC-74HC595N_DIP16_
+PDC004-PD
+
+
+0
+2
+2
 LOGIC-74HC595N_DIP16_
 Untitled
 
 
 0
-<<<<<<< HEAD
 5
 5
-=======
+LOGIC-74HC595N_DIP16_
+Untitled_1
+
+
 0
 0
->>>>>>> 8e4e73fc6a3e8e095e6fc05fa4e5af656d393704
+0
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
