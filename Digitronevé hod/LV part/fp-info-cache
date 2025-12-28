@@ -1,4 +1,4 @@
-26446058108185073
+26449591882967682
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -69153,12 +69153,19 @@ LOGIC-74HC595N_DIP16_
 16
 16
 LOGIC-74HC595N_DIP16_
+DCDC 9V-5V
+
+
+0
+3
+3
+LOGIC-74HC595N_DIP16_
 MAX1771
 
 
 0
-0
-0
+3
+3
 LOGIC-74HC595N_DIP16_
 MODULE_ESP32_DEVKIT_V1
 
@@ -69194,6 +69201,13 @@ Untitled_2
 0
 0
 0
+LOGIC-74HC595N_DIP16_
+Untitled_3
+
+
+0
+3
+3
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
