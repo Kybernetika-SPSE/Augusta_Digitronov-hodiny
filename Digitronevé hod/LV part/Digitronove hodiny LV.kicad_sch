@@ -3172,6 +3172,16 @@
 		)
 		(uuid "fbf9ae46-2618-4f4f-8352-13987df91118")
 	)
+	(label "SWITCH"
+		(at 147.32 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05289e92-1a39-4753-b7a4-f403a3cd08d7")
+	)
 	(label "EN"
 		(at 196.85 71.12 0)
 		(effects
@@ -3233,16 +3243,6 @@
 		(uuid "81d127a1-d1c4-4be4-b18c-2d19a441f102")
 	)
 	(label "3V3"
-		(at 139.7 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "89492224-67f8-4c9e-adbe-b6ac0ed5a2ae")
-	)
-	(label "3V3"
 		(at 156.21 63.5 0)
 		(effects
 			(font
@@ -3251,6 +3251,16 @@
 			(justify left bottom)
 		)
 		(uuid "9c6bff84-b71f-4eb5-b67c-cc5e537380d7")
+	)
+	(label "+1"
+		(at 148.59 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b62d3900-b51f-47f4-9485-75ef3785050e")
 	)
 	(label "5V"
 		(at 199.39 59.69 0)
@@ -3262,16 +3272,6 @@
 		)
 		(uuid "da0a1a4b-c77b-4599-94db-d8c42ab3b76b")
 	)
-	(label "3V3"
-		(at 134.62 91.0986 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dce766a1-e1c7-4b5e-93ad-5d32c189e5af")
-	)
 	(label "9V"
 		(at 256.54 78.74 0)
 		(effects
@@ -3282,15 +3282,15 @@
 		)
 		(uuid "e8bb51e7-2010-4dc8-bfa5-1f0ba5ecd591")
 	)
-	(label "3V3"
-		(at 137.16 90.678 0)
+	(label "START{slash}STOP"
+		(at 154.94 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "fcf6470a-70ea-4b73-b575-e451d0dc198c")
+		(uuid "faf1ab7b-e8cb-42c3-b4d3-075b9324026b")
 	)
 	(symbol
 		(lib_name "Conn_01x01_1")
