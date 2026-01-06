@@ -2301,10 +2301,10 @@
 		(uuid "0c2bb152-9368-4ef1-8101-af81ac41fa8a")
 	)
 	(junction
-		(at 152.4 146.05)
+		(at 143.51 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0f7216b9-99a2-4b14-adb7-0554a35ec76e")
+		(uuid "0c7f37c7-7bba-482f-a9d8-b2a2978bf984")
 	)
 	(junction
 		(at 156.21 71.12)
@@ -2331,12 +2331,6 @@
 		(uuid "4df5d1f3-6375-4ff2-8174-b98d91e92d8b")
 	)
 	(junction
-		(at 139.7 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "56231a55-8fc3-49c0-bd34-41be53bb9b74")
-	)
-	(junction
 		(at 232.41 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2355,22 +2349,16 @@
 		(uuid "6cdb4d7d-2aea-4f4b-a71a-71268830b6c7")
 	)
 	(junction
-		(at 152.4 109.22)
+		(at 132.08 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "70cf44b9-572c-4a5e-8aa3-914627081f78")
+		(uuid "865733f2-e922-4cbb-8ac2-0aa0832941d6")
 	)
 	(junction
-		(at 139.7 104.14)
+		(at 138.43 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7bcfa1c3-2f64-4e9b-89bf-6f08232b6eaf")
-	)
-	(junction
-		(at 139.7 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8ad945c6-4884-419a-9a24-c4454f1dad57")
+		(uuid "9a563cfe-1867-429e-b86c-83dda2edff54")
 	)
 	(junction
 		(at 236.22 69.85)
@@ -2385,6 +2373,18 @@
 		(uuid "ad2662dc-6ee9-41ff-bd98-898ac827cef5")
 	)
 	(junction
+		(at 143.51 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad4ce805-dd23-43aa-81ff-48486ec12ae2")
+	)
+	(junction
+		(at 148.59 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3bc4eeb-1766-41ee-9ad4-42c2ca664a46")
+	)
+	(junction
 		(at 205.74 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2395,12 +2395,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cce7cdf4-93b6-4486-b3e5-a55b00acbd82")
-	)
-	(junction
-		(at 137.16 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3d63719-7123-4c35-9e79-f7b615802b45")
 	)
 	(junction
 		(at 196.85 73.66)
@@ -2414,6 +2408,12 @@
 		(color 0 0 0 0)
 		(uuid "ea311ca1-2d97-4717-aaeb-7b8b292003bc")
 	)
+	(junction
+		(at 148.59 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1475d8c-7743-4324-8810-1086503157a6")
+	)
 	(no_connect
 		(at -800.1 -491.49)
 		(uuid "30e8e176-d308-4093-95a0-e79bc06fffa0")
@@ -2421,16 +2421,6 @@
 	(no_connect
 		(at -1386.84 -1120.14)
 		(uuid "6b1deaa3-848d-4136-bb68-ffb717ecf107")
-	)
-	(wire
-		(pts
-			(xy 139.7 104.14) (xy 157.48 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00558009-6acd-487c-82d6-b3a300606c8a")
 	)
 	(wire
 		(pts
@@ -2451,6 +2441,16 @@
 			(type default)
 		)
 		(uuid "1358c7b1-ae26-4bb9-a04b-7b030620a0f3")
+	)
+	(wire
+		(pts
+			(xy 132.08 57.15) (xy 138.43 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16e60bfb-afdb-4093-9044-edf43d8a79e0")
 	)
 	(wire
 		(pts
@@ -2484,6 +2484,26 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 104.14) (xy 138.43 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1df25bbb-368f-457d-96f9-32396e6854bb")
+	)
+	(wire
+		(pts
+			(xy 146.05 127) (xy 146.05 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21895db4-b945-41b0-858f-b114ce6d87f3")
+	)
+	(wire
+		(pts
 			(xy 243.84 59.69) (xy 256.54 59.69)
 		)
 		(stroke
@@ -2504,7 +2524,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 133.35) (xy 152.4 146.05)
+			(xy 148.59 109.22) (xy 148.59 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2521,6 +2541,16 @@
 			(type default)
 		)
 		(uuid "26904941-c679-4a1f-bb46-35901a123853")
+	)
+	(wire
+		(pts
+			(xy 148.59 127) (xy 148.59 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29637b0a-2053-4cfa-b015-acf0fdd5c1f7")
 	)
 	(wire
 		(pts
@@ -2544,26 +2574,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 125.73) (xy 152.4 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38e3c8ce-6970-47d6-b051-f863ac67607a")
-	)
-	(wire
-		(pts
-			(xy 152.4 109.22) (xy 157.48 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "396e8ee2-9b5b-41bc-8a3d-d17bdda412dd")
-	)
-	(wire
-		(pts
 			(xy 157.48 121.92) (xy 157.48 146.05)
 		)
 		(stroke
@@ -2584,7 +2594,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 57.15) (xy 139.7 71.12)
+			(xy 138.43 57.15) (xy 138.43 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2614,17 +2624,17 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 57.15) (xy 139.7 57.15)
+			(xy 148.59 109.22) (xy 125.73 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3fdddfc3-37c0-4681-9204-f4547ad532da")
+		(uuid "42510d38-0b8c-4ebe-9a44-874518760b47")
 	)
 	(wire
 		(pts
-			(xy 139.7 125.73) (xy 139.7 104.14)
+			(xy 143.51 104.14) (xy 143.51 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2641,6 +2651,16 @@
 			(type default)
 		)
 		(uuid "47055229-ff39-4600-a6cd-c12bfbd5dd34")
+	)
+	(wire
+		(pts
+			(xy 138.43 57.15) (xy 156.21 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ccd96c4-7375-412a-9125-1f36b01014ce")
 	)
 	(wire
 		(pts
@@ -2684,16 +2704,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 133.35) (xy 139.7 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56188134-3416-4940-b6cc-f3030451821e")
-	)
-	(wire
-		(pts
 			(xy 210.82 59.69) (xy 217.17 59.69)
 		)
 		(stroke
@@ -2704,13 +2714,23 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 57.15) (xy 134.62 71.12)
+			(xy 125.73 57.15) (xy 125.73 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5f8e0ca0-f757-42a0-a5dd-fa3123f4c145")
+	)
+	(wire
+		(pts
+			(xy 143.51 104.14) (xy 157.48 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fc19cd2-bd5e-464d-b421-f2be3f259451")
 	)
 	(wire
 		(pts
@@ -2734,7 +2754,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 106.68) (xy 137.16 106.68)
+			(xy 146.05 106.68) (xy 132.08 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2751,26 +2771,6 @@
 			(type default)
 		)
 		(uuid "78f6b232-38f5-4313-8e13-f6422bd70d2a")
-	)
-	(wire
-		(pts
-			(xy 139.7 146.05) (xy 146.05 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7abc46e4-9c5d-4651-97b5-8a7ac0b47323")
-	)
-	(wire
-		(pts
-			(xy 152.4 146.05) (xy 157.48 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b6964f6-80da-4cd6-b96e-d4cee6e3f428")
 	)
 	(wire
 		(pts
@@ -2804,16 +2804,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 104.14) (xy 139.7 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "818cfeb4-91cc-4720-82c4-01e28c6a8201")
-	)
-	(wire
-		(pts
 			(xy 270.51 69.85) (xy 262.89 69.85)
 		)
 		(stroke
@@ -2821,16 +2811,6 @@
 			(type default)
 		)
 		(uuid "85142bb4-6419-4d95-aec7-9deb2a9c2b3f")
-	)
-	(wire
-		(pts
-			(xy 139.7 57.15) (xy 156.21 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88266c72-6539-4ede-8c97-9ea56f7f89b1")
 	)
 	(wire
 		(pts
@@ -2864,16 +2844,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 133.35) (xy 146.05 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "912bdc54-4808-4172-8bea-ccca7dece07f")
-	)
-	(wire
-		(pts
 			(xy 217.17 59.69) (xy 217.17 134.62)
 		)
 		(stroke
@@ -2884,7 +2854,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 71.12) (xy 137.16 57.15)
+			(xy 132.08 72.39) (xy 132.08 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2964,7 +2934,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 78.74) (xy 134.62 109.22)
+			(xy 125.73 80.01) (xy 125.73 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2994,7 +2964,37 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 146.05) (xy 139.7 146.05)
+			(xy 138.43 80.01) (xy 138.43 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afa45800-87c1-4a53-bbe3-c2269d489a69")
+	)
+	(wire
+		(pts
+			(xy 148.59 146.05) (xy 157.48 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afc30c73-c715-4e7b-97cf-d3a60fd41388")
+	)
+	(wire
+		(pts
+			(xy 143.51 146.05) (xy 146.05 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0e0d3f9-fb86-46bb-b268-6ea74cb0e767")
+	)
+	(wire
+		(pts
+			(xy 135.89 146.05) (xy 143.51 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3024,7 +3024,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 125.73) (xy 146.05 106.68)
+			(xy 146.05 106.68) (xy 146.05 119.38)
 		)
 		(stroke
 			(width 0)
@@ -3034,7 +3034,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 146.05) (xy 152.4 146.05)
+			(xy 146.05 146.05) (xy 148.59 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3044,7 +3044,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 57.15) (xy 137.16 57.15)
+			(xy 125.73 57.15) (xy 132.08 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3104,6 +3104,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 127) (xy 143.51 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df5416b5-cc68-44e8-8b0f-6a541af8671a")
+	)
+	(wire
+		(pts
 			(xy 256.54 64.77) (xy 256.54 80.01)
 		)
 		(stroke
@@ -3114,7 +3124,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 106.68) (xy 137.16 78.74)
+			(xy 132.08 80.01) (xy 132.08 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3134,7 +3144,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 109.22) (xy 134.62 109.22)
+			(xy 148.59 109.22) (xy 157.48 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3302,7 +3312,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "115e8677-2113-4bc4-9fcd-cb2481038551")
-		(property "Reference" "J11"
+		(property "Reference" "J9"
 			(at 227.33 139.7 90)
 			(effects
 				(font
@@ -3353,7 +3363,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "J11")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -3369,7 +3379,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "17cec8cd-3e26-4fb0-b226-98b450de6218")
-		(property "Reference" "J9"
+		(property "Reference" "J7"
 			(at 152.4 102.87 90)
 			(effects
 				(font
@@ -3420,7 +3430,75 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "J9")
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 143.51 123.19 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b3f1bc9-18de-4a9f-bc42-5ab62ac235db")
+		(property "Reference" "R4"
+			(at 141.478 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 143.51 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 145.288 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 143.51 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c00b8c51-c5c5-4939-9c6b-27b1950dbf30")
+		)
+		(pin "2"
+			(uuid "e4c941f9-1ce8-4e9c-b6ab-2bb3068a56bb")
+		)
+		(instances
+			(project "Digitronove hodiny LV"
+				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -3503,7 +3581,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f22fbc0-70eb-466f-ada6-6a1c854a5df0")
-		(property "Reference" "J13"
+		(property "Reference" "J11"
 			(at 250.19 147.3199 0)
 			(effects
 				(font
@@ -3566,7 +3644,7 @@
 		(instances
 			(project ""
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "J13")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -3582,7 +3660,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "320f6e0d-e132-468f-a73c-845ef4918b6e")
-		(property "Reference" "J12"
+		(property "Reference" "J10"
 			(at 130.81 147.32 90)
 			(effects
 				(font
@@ -3633,7 +3711,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "J12")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -3641,16 +3719,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 139.7 129.54 270)
+		(at 196.85 66.04 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "35b203c2-937a-4f02-93d2-d1f0b81c0325")
-		(property "Reference" "SW2"
-			(at 141.478 122.428 0)
+		(uuid "44156cd8-4f4c-4d6f-98f2-df700db2f6b0")
+		(property "Reference" "SW1"
+			(at 190.754 67.564 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3658,8 +3736,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SWITCH"
-			(at 137.668 125.73 0)
+		(property "Value" "RESET"
+			(at 186.436 64.516 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3668,7 +3746,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
-			(at 144.78 129.54 0)
+			(at 191.77 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3677,7 +3755,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 129.54 0)
+			(at 191.77 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3686,7 +3764,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 139.7 129.54 0)
+			(at 196.85 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3695,15 +3773,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "09a31d51-a06a-4961-a53a-37d7e61caeba")
+			(uuid "a9183df9-5f51-47a0-91f9-d4e3a1061979")
 		)
 		(pin "2"
-			(uuid "56d3dd86-5c3d-4919-afef-83bd3f266135")
+			(uuid "f0d5f433-9ef9-4be9-9221-8ba13596a378")
 		)
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "SW2")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3711,16 +3789,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 74.93 0)
-		(mirror y)
+		(at 200.66 80.01 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "38215257-b81a-42e0-9fb9-6f47e109a2bf")
-		(property "Reference" "R4"
-			(at 137.668 74.93 90)
+		(uuid "4e52f781-f8d2-4230-9343-f3448637fa72")
+		(property "Reference" "R1"
+			(at 200.66 82.042 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3728,7 +3806,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 139.7 74.93 90)
+			(at 200.66 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3736,7 +3814,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 141.478 74.93 90)
+			(at 200.66 78.232 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3745,7 +3823,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 74.93 0)
+			(at 200.66 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3754,7 +3832,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 139.7 74.93 0)
+			(at 200.66 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3763,15 +3841,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "60e744c8-1cb4-4a6d-a221-5e8012ee2a5a")
+			(uuid "2a1d5fe2-592d-4ab6-a0ae-c79227955f6e")
 		)
 		(pin "2"
-			(uuid "d4e62ed8-f717-4958-a34b-e7a0a897a90a")
+			(uuid "3e531c0e-7b8b-4adb-9f09-ed35b029b2ff")
 		)
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "R4")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3846,146 +3924,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 152.4 129.54 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "57b3ffaf-724f-41e8-abb0-16445c7c5634")
-		(property "Reference" "SW4"
-			(at 154.432 122.428 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "START/STOP"
-			(at 150.622 124.206 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
-			(at 157.48 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 157.48 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 152.4 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a97310fd-6c00-40ae-9839-0b06f6293143")
-		)
-		(pin "2"
-			(uuid "5d01ed47-d8b1-4a92-8a71-ba5024dc3673")
-		)
-		(instances
-			(project "Digitronove hodiny LV"
-				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 146.05 129.54 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6722d162-0f06-43e4-827a-58f5b9db55e2")
-		(property "Reference" "SW3"
-			(at 147.828 122.428 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "+1"
-			(at 144.272 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
-			(at 151.13 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 151.13 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 146.05 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fc6124d1-10ae-47b3-a798-68ea5ee11187")
-		)
-		(pin "2"
-			(uuid "5abc71c2-fa5b-4673-ae7d-6366fca594ee")
-		)
-		(instances
-			(project "Digitronove hodiny LV"
-				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 257.81 85.09 90)
 		(mirror x)
@@ -3995,7 +3933,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "70f6fe58-06d0-4b83-9db1-b87b68ab16a8")
-		(property "Reference" "R5"
+		(property "Reference" "R2"
 			(at 257.81 87.122 90)
 			(effects
 				(font
@@ -4047,7 +3985,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "R5")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -4055,16 +3993,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 196.85 66.04 0)
+		(at 148.59 123.19 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7c4f7fef-f01a-46a3-bba5-c6fd1eb2ae04")
-		(property "Reference" "R1"
-			(at 194.818 66.04 90)
+		(uuid "74dc7cac-4e72-4cee-9e2c-b31cd8c93cd9")
+		(property "Reference" "R6"
+			(at 146.558 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4072,7 +4010,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 196.85 66.04 90)
+			(at 148.59 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4080,7 +4018,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 198.628 66.04 90)
+			(at 150.368 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4089,7 +4027,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 196.85 66.04 0)
+			(at 148.59 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4098,7 +4036,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 196.85 66.04 0)
+			(at 148.59 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4107,15 +4045,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "84901530-39db-4474-8a91-a712003ea7d1")
+			(uuid "c4b4c359-0684-49a4-bc02-327951754d6a")
 		)
 		(pin "2"
-			(uuid "b9e72da5-94fa-422d-955d-70e5004ef807")
+			(uuid "15fb23eb-ac49-4b95-a06f-3b7f446ef78f")
 		)
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "R1")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -4131,7 +4069,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7dbda67f-2ab7-4766-b013-e69e001b4757")
-		(property "Reference" "J10"
+		(property "Reference" "J8"
 			(at 213.36 133.35 90)
 			(effects
 				(font
@@ -4182,7 +4120,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "J10")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -4265,7 +4203,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ec801a1-20ff-4feb-b708-98f4ed95c838")
-		(property "Reference" "J7"
+		(property "Reference" "J5"
 			(at 152.4 97.79 90)
 			(effects
 				(font
@@ -4316,7 +4254,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "J7")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -4464,33 +4402,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 134.62 74.93 0)
-		(mirror y)
+		(lib_id "Switch:SW_Push")
+		(at 138.43 76.2 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "96b5ec1e-039d-4394-ba2c-0eae344a7053")
-		(property "Reference" "R2"
-			(at 132.588 74.93 90)
+		(uuid "9e87911b-6643-4a55-a145-fdbd2c5c45fd")
+		(property "Reference" "SW4"
+			(at 140.462 69.088 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "10k"
-			(at 134.62 74.93 90)
+		(property "Value" "START/STOP"
+			(at 136.652 70.866 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 136.398 74.93 90)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 143.51 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4499,7 +4439,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 134.62 74.93 0)
+			(at 143.51 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4507,8 +4447,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 134.62 74.93 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 138.43 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4517,15 +4457,83 @@
 			)
 		)
 		(pin "1"
-			(uuid "a9f8117e-2f78-48e9-a850-0be5023862da")
+			(uuid "940f544f-22ee-4bfd-b6f4-9e9621897fde")
 		)
 		(pin "2"
-			(uuid "2246bb9e-a88a-46bd-969d-d3498fa20b17")
+			(uuid "91cc6772-5d97-4b36-b5c9-400d7d1314ab")
 		)
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "R2")
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 146.05 123.19 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aab2350d-8e7c-4b81-b4bc-d0ee955c5c84")
+		(property "Reference" "R5"
+			(at 143.764 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 146.05 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 147.828 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 146.05 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73872324-21f8-4438-923f-7800eabcc11b")
+		)
+		(pin "2"
+			(uuid "1da3c263-642f-4c97-ae8a-91dac0cc0f58")
+		)
+		(instances
+			(project "Digitronove hodiny LV"
+				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4609,7 +4617,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b85ab177-0e7f-4f8b-8fbf-0db5017b6ac4")
-		(property "Reference" "R6"
+		(property "Reference" "R3"
 			(at 149.86 92.71 0)
 			(effects
 				(font
@@ -4663,7 +4671,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "R6")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4679,7 +4687,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c6e11662-782f-42d7-b2ef-a3627176592b")
-		(property "Reference" "J6"
+		(property "Reference" "J4"
 			(at 146.05 95.25 90)
 			(effects
 				(font
@@ -4730,7 +4738,77 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "J6")
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 125.73 76.2 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c86ade01-1195-424a-b3a3-9b8aee5cca3a")
+		(property "Reference" "SW2"
+			(at 127.508 69.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SWITCH"
+			(at 123.698 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 130.81 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 125.73 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b760d6dd-3aad-4ad5-9029-92e9ff1acb8c")
+		)
+		(pin "2"
+			(uuid "bf09fd5d-0be0-4c83-b8e9-c600405b4087")
+		)
+		(instances
+			(project "Digitronove hodiny LV"
+				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -4746,7 +4824,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ce156390-2640-41d4-b4be-3bf36dcd0a14")
-		(property "Reference" "J8"
+		(property "Reference" "J6"
 			(at 152.4 100.33 90)
 			(effects
 				(font
@@ -4797,7 +4875,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "J8")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -4877,85 +4955,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 137.16 74.93 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "df641dd1-9939-4a2a-abae-39d8ef24e6a8")
-		(property "Reference" "R3"
-			(at 135.128 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 137.16 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 138.938 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 137.16 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "63706064-cc38-48eb-b99b-b8464e1426f8")
-		)
-		(pin "2"
-			(uuid "5f0383b7-9690-41d3-9440-e9618555ab2d")
-		)
-		(instances
-			(project "Digitronove hodiny LV"
-				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 200.66 80.01 0)
-		(mirror y)
+		(at 132.08 76.2 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f0835869-1069-47ef-86d9-ae0b23bc2d62")
-		(property "Reference" "SW1"
-			(at 199.136 73.914 90)
+		(uuid "dfd58157-7926-4476-8b4b-46bfda816527")
+		(property "Reference" "SW3"
+			(at 133.858 69.088 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4963,8 +4973,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RESET"
-			(at 202.184 69.596 90)
+		(property "Value" "+1"
+			(at 130.302 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4973,7 +4983,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
-			(at 200.66 74.93 0)
+			(at 137.16 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4982,7 +4992,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 74.93 0)
+			(at 137.16 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4991,7 +5001,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 200.66 80.01 0)
+			(at 132.08 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5000,15 +5010,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b4e93a96-242e-4190-9c1b-95faf60732d7")
+			(uuid "f4fec646-630a-471f-8ef5-a2e6a1f13fd7")
 		)
 		(pin "2"
-			(uuid "b6fa75ae-2576-446d-87b2-82ffc0f4f9d3")
+			(uuid "cd3317e5-1ad5-4845-8e90-498031a67082")
 		)
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "SW1")
+					(reference "SW3")
 					(unit 1)
 				)
 			)

@@ -6911,7 +6911,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LOGIC-74HC595N_DIP16_:74HC595N"
 			(at 110.49 49.53 0)
 			(effects
 				(font
@@ -8012,7 +8012,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LOGIC-74HC595N_DIP16_:74HC595N"
 			(at 58.42 49.53 0)
 			(effects
 				(font
