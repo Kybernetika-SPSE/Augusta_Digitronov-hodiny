@@ -5,382 +5,12 @@
 	(uuid "760f652f-b82b-45ad-92c5-42c0d0511f5b")
 	(paper "A4")
 	(lib_symbols
-		(symbol "74HC595_1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U1"
-				(at -6.4202 19.05 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "74HC595"
-				(at -3.8802 19.05 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "LOGIC-74HC595N_DIP16_:74HC595N"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "8-bit serial in/out Shift Register 3-State Outputs"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "HCMOS SR 3State"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm* SOIC*5.3x10.2mm*P1.27mm* SOIC*7.5x10.3mm*P1.27mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "74HC595_1_1_0"
-				(pin input line
-					(at -10.16 10.16 0)
-					(length 2.54)
-					(name "SER"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "SRCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "~{SRCLR}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "RCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "~{OE}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 15.24 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 10.16 180)
-					(length 2.54)
-					(name "QA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 7.62 180)
-					(length 2.54)
-					(name "QB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "QC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "QD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "QE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "QF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "QG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 -7.62 180)
-					(length 2.54)
-					(name "QH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 -12.7 180)
-					(length 2.54)
-					(name "QH'"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "74HC595_1_1_1"
-				(rectangle
-					(start -7.62 12.7)
-					(end 7.62 -15.24)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "74xx:74HC595"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U2"
-				(at -6.4202 19.05 90)
+			(property "Reference" "U"
+				(at -7.62 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -388,14 +18,14 @@
 				)
 			)
 			(property "Value" "74HC595"
-				(at -3.8802 19.05 90)
+				(at -7.62 -16.51 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "LOGIC-74HC595N_DIP16_:74HC595N"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -875,121 +505,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Conn_01x01_1"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J1"
-				(at 1.2701 -2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "3V3"
-				(at -1.2699 -2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x01_1_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1825,89 +1340,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Mechanical:MountingHole"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "H"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Mounting Hole without connection"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MountingHole_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 			)
@@ -2895,6 +2327,12 @@
 		(uuid "1fac98ff-2c30-42d3-8331-8a76c6064716")
 	)
 	(junction
+		(at 73.66 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34db8a71-41b6-4555-af44-bc8c43b0b54c")
+	)
+	(junction
 		(at 55.88 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2919,12 +2357,6 @@
 		(uuid "5da32511-f9ba-4f66-abb5-041723aa5b71")
 	)
 	(junction
-		(at 167.64 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ebdc1b0-c8e9-4bf7-a263-acf128de5c84")
-	)
-	(junction
 		(at 156.21 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2941,12 +2373,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a1f358b-71a6-4ba0-b3e6-7dfec167a2c5")
-	)
-	(junction
-		(at 73.66 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "880bc0ef-1b33-459a-b2a2-04686924fc88")
 	)
 	(junction
 		(at 115.57 36.83)
@@ -3494,16 +2920,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 24.13) (xy 73.66 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30e2dddd-710a-43d6-a444-9b1c60f28a36")
-	)
-	(wire
-		(pts
 			(xy 71.12 72.39) (xy 71.12 85.09)
 		)
 		(stroke
@@ -3834,16 +3250,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 176.53) (xy 167.64 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64c8f5ae-51f9-43e2-895b-3393b8e63830")
-	)
-	(wire
-		(pts
 			(xy 130.81 172.72) (xy 99.06 172.72)
 		)
 		(stroke
@@ -3891,6 +3297,16 @@
 			(type default)
 		)
 		(uuid "6bf4ba38-f21d-4fe9-9899-2543572aad77")
+	)
+	(wire
+		(pts
+			(xy 73.66 24.13) (xy 73.66 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c08c3ed-ca82-4a43-a363-79b3831d1a85")
 	)
 	(wire
 		(pts
@@ -4932,7 +4348,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "058eefa8-e821-4d57-a71b-5481591da32c")
-		(property "Reference" "C3"
+		(property "Reference" "C8"
 			(at 126.9936 31.75 90)
 			(effects
 				(font
@@ -4984,7 +4400,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "C3")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -5000,7 +4416,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0747ab56-55a2-4970-bd75-c8142c197e2d")
-		(property "Reference" "C8"
+		(property "Reference" "C6"
 			(at 171.45 179.0699 0)
 			(effects
 				(font
@@ -5054,7 +4470,7 @@
 		(instances
 			(project ""
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "C8")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -5666,7 +5082,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "294bfebc-cbdd-4889-9b48-ace927d08ce7")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR03"
 			(at 34.29 49.53 0)
 			(effects
 				(font
@@ -5717,7 +5133,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "#PWR05")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -5873,7 +5289,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "351c6aae-5fe4-44f1-b3f7-db914b3bd1bc")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR06"
 			(at 180.34 128.27 0)
 			(effects
 				(font
@@ -5924,7 +5340,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "#PWR08")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -6004,9 +5420,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "4b901657-8351-471b-8ffc-1f015e446d1d")
-		(property "Reference" "C2"
-			(at 69.342 25.146 90)
+		(property "Reference" "C7"
+			(at 72.3963 23.368 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6014,7 +5431,7 @@
 			)
 		)
 		(property "Value" "100 nF"
-			(at 69.342 27.432 90)
+			(at 72.3963 25.908 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6057,7 +5474,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "C2")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -6225,72 +5642,6 @@
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
 					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 152.4 176.53 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5d0ea2cb-0a45-4ac1-afab-2b1f5502c24a")
-		(property "Reference" "#PWR010"
-			(at 146.05 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 152.146 182.372 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "88a2bc3d-d9dd-4a2a-a853-635b93b45180")
-		)
-		(instances
-			(project "Digitronove hodiny LV"
-				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -6844,70 +6195,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 180.34 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b252262-6ff6-4717-adb4-84d904be4693")
-		(property "Reference" "H1"
-			(at 182.88 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 182.88 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm"
-			(at 180.34 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 180.34 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 180.34 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 128.27 38.1 90)
 		(unit 1)
@@ -6917,7 +6204,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c9bf541-5301-433f-ada2-2a95eaf66d1a")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR09"
 			(at 134.62 38.1 0)
 			(effects
 				(font
@@ -6968,78 +6255,13 @@
 		(instances
 			(project ""
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "#PWR04")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 180.34 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "83177af6-dd87-417d-8895-253bd0044e38")
-		(property "Reference" "H2"
-			(at 182.88 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 182.88 72.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm"
-			(at 180.34 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 180.34 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 180.34 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "Digitronove hodiny LV"
-				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Conn_01x01_1")
 		(lib_id "Connector_Generic:Conn_01x01")
 		(at 73.66 13.97 90)
 		(unit 1)
@@ -7186,7 +6408,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "892ff9c8-3bee-420a-bff1-50d7fed584ba")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR04"
 			(at 86.36 49.53 0)
 			(effects
 				(font
@@ -7237,7 +6459,7 @@
 		(instances
 			(project ""
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "#PWR06")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -7253,7 +6475,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e74c2b4-b1a8-4bf1-9241-1faf155f588b")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR010"
 			(at 64.77 30.48 0)
 			(effects
 				(font
@@ -7304,7 +6526,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "#PWR03")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -7423,32 +6645,36 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 156.21 176.53 90)
+		(lib_name "C_Small_1")
+		(lib_id "Device:C_Small")
+		(at 73.66 21.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9c0198c1-06f1-44e8-be81-e9e1b47fd277")
-		(property "Reference" "R8"
-			(at 156.21 178.816 90)
+		(fields_autoplaced yes)
+		(uuid "95a143b7-3b30-4a96-8127-10724ef570df")
+		(property "Reference" "C1"
+			(at 76.2 20.3262 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "1M"
-			(at 156.21 181.356 90)
+		(property "Value" "470 µF"
+			(at 76.2 22.8662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 156.21 178.308 90)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+			(at 73.66 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7457,7 +6683,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 176.53 0)
+			(at 73.66 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7465,8 +6691,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 156.21 176.53 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 73.66 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7475,15 +6701,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "19b6480b-09e1-43c5-bcd6-fc653ce987ce")
+			(uuid "bd78f187-6dcd-4051-b2dc-4fbf62da0113")
 		)
 		(pin "2"
-			(uuid "38c7a9df-3ec4-4c17-b114-15785d3ba1b6")
+			(uuid "67164552-7be1-41b1-b709-ca7478e31ee9")
 		)
 		(instances
-			(project "Digitronove hodiny LV"
+			(project ""
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "R8")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -7569,7 +6795,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b267a874-fc2d-403e-a75e-edfff7001bb3")
-		(property "Reference" "C7"
+		(property "Reference" "C5"
 			(at 118.1163 78.74 90)
 			(effects
 				(font
@@ -7621,7 +6847,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "C7")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -7707,7 +6933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8bb272b-b5d3-4132-aefc-a037493ccc45")
-		(property "Reference" "C5"
+		(property "Reference" "C3"
 			(at 57.1563 77.47 90)
 			(effects
 				(font
@@ -7759,7 +6985,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "C5")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -7845,7 +7071,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3dbbd56-31c6-4a4b-9b40-290ac3b3360a")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR05"
 			(at 26.67 67.31 0)
 			(effects
 				(font
@@ -7896,14 +7122,13 @@
 		(instances
 			(project ""
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "#PWR07")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "74HC595_1")
 		(lib_id "74xx:74HC595")
 		(at 58.42 49.53 270)
 		(unit 1)
@@ -8008,77 +7233,6 @@
 			(project ""
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "C_Small_1")
-		(lib_id "Device:C_Small")
-		(at 73.66 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c8d41047-8630-4f01-8c02-9c354f427a99")
-		(property "Reference" "C1"
-			(at 76.2 20.3262 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF"
-			(at 76.2 22.8662 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 73.66 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 73.66 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 73.66 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4564df26-4dc6-4045-8898-339f33bf8bf6")
-		)
-		(pin "2"
-			(uuid "7eea20ea-4368-4cbd-ba2e-834bf046b720")
-		)
-		(instances
-			(project ""
-				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -8267,7 +7421,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cfe1518b-d42e-481f-a4ba-70e9b7b83295")
-		(property "Reference" "C4"
+		(property "Reference" "C2"
 			(at 27.9463 77.47 90)
 			(effects
 				(font
@@ -8319,7 +7473,7 @@
 		(instances
 			(project ""
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "C4")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -8334,7 +7488,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d27e2d67-1569-4b83-9679-2ab4fdef4e7e")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR08"
 			(at 165.1 181.61 0)
 			(effects
 				(font
@@ -8385,7 +7539,7 @@
 		(instances
 			(project ""
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "#PWR011")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -8401,7 +7555,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4d4e5dd-c0bd-46d8-872f-24c024a96a99")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR07"
 			(at 167.64 134.62 0)
 			(effects
 				(font
@@ -8452,7 +7606,7 @@
 		(instances
 			(project ""
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "#PWR09")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -8723,7 +7877,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eed2deea-a487-485b-8abd-0027659bff3c")
-		(property "Reference" "C6"
+		(property "Reference" "C4"
 			(at 88.9063 78.74 90)
 			(effects
 				(font
@@ -8775,71 +7929,7 @@
 		(instances
 			(project "Digitronove hodiny LV"
 				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 180.34 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f22457d4-a45c-4f6d-970c-09975268a742")
-		(property "Reference" "H3"
-			(at 182.88 78.7399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 182.88 81.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm"
-			(at 180.34 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 180.34 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 180.34 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "Digitronove hodiny LV"
-				(path "/760f652f-b82b-45ad-92c5-42c0d0511f5b"
-					(reference "H3")
+					(reference "C4")
 					(unit 1)
 				)
 			)
