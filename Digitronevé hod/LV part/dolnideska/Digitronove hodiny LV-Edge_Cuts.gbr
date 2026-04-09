@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,9.0.7*%
+%TF.CreationDate,2026-03-10T16:43:10+01:00*%
+%TF.ProjectId,Digitronove hodiny LV,44696769-7472-46f6-9e6f-766520686f64,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 9.0.7) date 2026-03-10 16:43:10*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.200000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X120626000Y-64871200D02*
+X256626000Y-64871200D01*
+X256626000Y-126871200D01*
+X120626000Y-126871200D01*
+X120626000Y-64871200D01*
+M02*

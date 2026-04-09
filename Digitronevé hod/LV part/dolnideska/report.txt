@@ -1,0 +1,12 @@
+Plotted to 'C:\Users\User\Desktop\Digitronove hodiny LV\Digitronevé hod\LV part\dolnideska\Digitronove hodiny LV-F_Cu.gbr'.
+Plotted to 'C:\Users\User\Desktop\Digitronove hodiny LV\Digitronevé hod\LV part\dolnideska\Digitronove hodiny LV-B_Cu.gbr'.
+Plotted to 'C:\Users\User\Desktop\Digitronove hodiny LV\Digitronevé hod\LV part\dolnideska\Digitronove hodiny LV-F_Paste.gbr'.
+Plotted to 'C:\Users\User\Desktop\Digitronove hodiny LV\Digitronevé hod\LV part\dolnideska\Digitronove hodiny LV-B_Paste.gbr'.
+Plotted to 'C:\Users\User\Desktop\Digitronove hodiny LV\Digitronevé hod\LV part\dolnideska\Digitronove hodiny LV-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\User\Desktop\Digitronove hodiny LV\Digitronevé hod\LV part\dolnideska\Digitronove hodiny LV-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\User\Desktop\Digitronove hodiny LV\Digitronevé hod\LV part\dolnideska\Digitronove hodiny LV-F_Mask.gbr'.
+Plotted to 'C:\Users\User\Desktop\Digitronove hodiny LV\Digitronevé hod\LV part\dolnideska\Digitronove hodiny LV-B_Mask.gbr'.
+Plotted to 'C:\Users\User\Desktop\Digitronove hodiny LV\Digitronevé hod\LV part\dolnideska\Digitronove hodiny LV-Edge_Cuts.gbr'.
+Created Gerber job file 'C:\Users\User\Desktop\Digitronove hodiny LV\Digitronevé hod\LV part\dolnideska\Digitronove hodiny LV-job.gbrjob'.
+Info: Done.
+Info: Done.
