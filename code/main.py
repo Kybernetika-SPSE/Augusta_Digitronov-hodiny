@@ -18,22 +18,28 @@ try:
 except ImportError:
     i2c_available = False
 
-# --- NASTAVENÍ PINŮ PODLE SCHÉMATU ---
+# --- NASTAVENI PINU PODLE SCHEMATU ---
 btn_start_stop = Pin(23, Pin.IN) 
 btn_plus_one   = Pin(32, Pin.IN) 
 btn_switch     = Pin(33, Pin.IN) 
 
-# Posuvné registry 74HC595
+# Posuvne registry 74HC595
 pin_ser   = Pin(27, Pin.OUT) 
 pin_srclk = Pin(26, Pin.OUT) 
 pin_rlck  = Pin(25, Pin.OUT) 
 pin_oe    = Pin(22, Pin.OUT)  
 
-# NOVÉ PINY: Měnič a Tečky
-pin_shdn  = Pin(13, Pin.OUT) # SHDN - Zapínání 170V měniče (IO14)
-pin_dots  = Pin(2, Pin.OUT)  # D2 - Zapínání teček mezi číslicemi (GPIO 2)
+# Bezpecne vychozi stavy pro 74HC595 (zadne nahodne pulzy pri startu)
+pin_ser.value(0)
+pin_srclk.value(0)
+pin_rlck.value(0)
+pin_oe.value(0)
 
-# --- INICIALIZACE I2C a SENZORŮ ---
+# NOVE PINY: Menic a Tecky
+pin_shdn  = Pin(13, Pin.OUT) # SHDN - Zapinani 170V menice (IO14)
+pin_dots  = Pin(2, Pin.OUT)  # D2 - Zapinani tecek mezi cislicemi (GPIO 2)
+
+# --- INICIALIZACE I2C a SENZORU ---
 i2c = I2C(0, scl=Pin(4), sda=Pin(18), freq=400000)
 
 if i2c_available:
@@ -46,9 +52,7 @@ current_minute = 00
 display_on = False
 frozen_time = False
 freeze_start_time = 0
-set_mode = 0 # 0 = Běžný provoz, 1 = Nastavení HODIN, 2 = Nastavení MINUT
-
-
+set_mode = 0 # 0 = Bezny provoz, 1 = Nastaveni HODIN, 2 = Nastaveni MINUT
 posledni_pohyb_cas = time.ticks_ms() 
 
 # --- Fce ---
@@ -66,7 +70,7 @@ def turn_off_display():
     display_on = False
 
 def dec_to_bcd(val):
-    """Převede klasické číslo (např. 34) na BCD formát pro K155ID1"""
+    """Prevede klasicke cislo (napr. 34) na BCD format pro K155ID1"""
     tens = val // 10
     units = val % 10
     return (tens << 4) | units
@@ -75,8 +79,13 @@ def update_shift_registers(hours, minutes):
     bcd_hours = dec_to_bcd(hours)
     bcd_minutes = dec_to_bcd(minutes)
     
-    # min:hod
+    # hod:min
     data_to_send = (bcd_hours << 8) | bcd_minutes
+
+    # Pri shiftovani docasne vypneme vystup, aby nevznikaly artefakty.
+    output_was_enabled = (pin_oe.value() == 0)
+    if output_was_enabled:
+        pin_oe.value(1)
     
     pin_rlck.value(0)
     for i in range(15, -1, -1):
@@ -86,12 +95,15 @@ def update_shift_registers(hours, minutes):
         pin_srclk.value(1)
         pin_srclk.value(0)
         
-    pin_rlck.value(0) 
     pin_rlck.value(1)
+    pin_rlck.value(0)
+
+    if output_was_enabled:
+        pin_oe.value(0)
     
     
 
-# --- HLAVNÍ SMYČÁK  ---
+    # --- HLAVNI SMYCAK  ---
 while True:
     now = time.ticks_ms()
     
@@ -105,7 +117,7 @@ while True:
         except:
             pass 
             
-    # === ČTENÍ REÁLNÉHO ČASU Z RTC ===
+    # === CTENI REALNEHO CASU Z RTC ===
     if i2c_available and set_mode == 0 and not frozen_time:
         try:
             cas = rtc.datetime() 
@@ -115,9 +127,9 @@ while True:
         except:
             pass
             
-    # 2. ZHASÍNÁNÍ DIGITRONEK
+    # 2. ZHASINANI DIGITRONEK
     if display_on and set_mode == 0:
-        if time.ticks_diff(now, posledni_pohyb_cas) > 5000:
+        if time.ticks_diff(now, posledni_pohyb_cas) > 8000:
             turn_off_display()
 
     # 3. DOTS
@@ -130,7 +142,7 @@ while True:
         else:
             pin_dots.value(1)
     
-    # 4. Zmrazení času 
+    # 4. Zmrazeni casu 
     if btn_start_stop.value() == 0:
         if not frozen_time:
             frozen_time = True
@@ -140,7 +152,7 @@ while True:
     if frozen_time and time.ticks_diff(now, freeze_start_time) > 10000:
         frozen_time = False
 
-   # 5. Přepínání režimů nastavení (Switch) a ULOŽENÍ ČASU
+    # 5. Prepinani rezimu nastaveni (Switch) a ULOZENI CASU
     if btn_switch.value() == 0:
         stary_rezim = set_mode
         set_mode = (set_mode + 1) % 3
@@ -158,7 +170,7 @@ while True:
         if not display_on: turn_on_display()
         time.sleep(0.3)
 
-    # 6. Přidávání času (+1)
+    # 6. Pridavani casu (+1)
     if btn_plus_one.value() == 0:
         if set_mode == 1:
             current_hour = (current_hour + 1) % 24
@@ -168,8 +180,11 @@ while True:
         if not display_on: turn_on_display()
         time.sleep(0.2) 
 
-    # 7. Zobrazení 
+    # 7. Zobrazeni 
     if display_on:
+        # Pri aktivnim zobrazeni drz drivery trvale zapnute.
+        pin_shdn.value(1)
+        pin_oe.value(0)
         update_shift_registers(current_hour, current_minute)
     
     time.sleep(0.05)
