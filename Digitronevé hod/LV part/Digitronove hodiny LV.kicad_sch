@@ -5,8 +5,10 @@
 	(uuid "760f652f-b82b-45ad-92c5-42c0d0511f5b")
 	(paper "A4")
 	(title_block
-		(title "Dolní deska")
+		(title "Příloha I")
 		(date "08.04.2025")
+		(rev "Augusta Jan")
+		(comment 1 "Dolní PCB")
 	)
 	(lib_symbols
 		(symbol "C_1"

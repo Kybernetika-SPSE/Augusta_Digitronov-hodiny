@@ -41,8 +41,8 @@ if i2c_available:
     sensor = vl53l0x.VL53L0X(i2c) # Tady ho rovnou pojmenujeme sensor
 
 # --- GLORBO FLORBO
-current_hour = 12
-current_minute = 34
+current_hour = 00
+current_minute = 00
 display_on = False
 frozen_time = False
 freeze_start_time = 0
@@ -55,12 +55,12 @@ posledni_pohyb_cas = time.ticks_ms()
 def turn_on_display():
     global display_on
     pin_oe.value(0)   
-    pin_shdn.value(0) 
+    pin_shdn.value(1) 
     display_on = True
 
 def turn_off_display():
     global display_on
-    pin_shdn.value(1) 
+    pin_shdn.value(0) 
     pin_oe.value(1)  
     pin_dots.value(0) 
     display_on = False
@@ -72,25 +72,24 @@ def dec_to_bcd(val):
     return (tens << 4) | units
 
 def update_shift_registers(hours, minutes):
-    """Pošle 16 bitů do kaskády dvou 74HC595"""
     bcd_hours = dec_to_bcd(hours)
     bcd_minutes = dec_to_bcd(minutes)
     
     # min:hod
     data_to_send = (bcd_hours << 8) | bcd_minutes
     
-    # Nastavění hodnot
+    pin_rlck.value(0)
     for i in range(15, -1, -1):
         bit = (data_to_send >> i) & 1
         pin_ser.value(bit)
-          
+
         pin_srclk.value(1)
         pin_srclk.value(0)
         
+    pin_rlck.value(0) 
     pin_rlck.value(1)
-    pin_rlck.value(0)
-
-
+    
+    
 
 # --- HLAVNÍ SMYČÁK  ---
 while True:
@@ -111,8 +110,8 @@ while True:
         try:
             cas = rtc.datetime() 
         
-            current_hour = cas[4]   # Přepíše tu 12
-            current_minute = cas[5] # Přepíše tu 34
+            current_hour = cas[4]   
+            current_minute = cas[5] 
         except:
             pass
             
@@ -124,12 +123,12 @@ while True:
     # 3. DOTS
     if display_on:
         if set_mode == 0:
-            if (now % 1000) < 500:
+            if (now % 2000) < 1000:
                 pin_dots.value(1)
             else:
                 pin_dots.value(0)
         else:
-            pin_dots.value(1) 
+            pin_dots.value(1)
     
     # 4. Zmrazení času 
     if btn_start_stop.value() == 0:
@@ -149,9 +148,9 @@ while True:
 
         if stary_rezim != 0 and set_mode == 0 and i2c_available:
             try:
-                novy_cas = (2025, 30,1, current_hour, current_minute, 0, 0)
-                
+                novy_cas = (2025, 1, 1, current_hour, current_minute, 0, 0)
                 rtc.datetime(novy_cas)
+                
             except:
                 pass
 
